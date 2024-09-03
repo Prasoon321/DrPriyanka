@@ -48,18 +48,20 @@
       <!-- Header start -->
 
       <header id="sticky-header" class="header bg-white">
-        <div class="d-flex white-bg-header">
-          <div class="flex-1 d-flex align-items-center justify-content-between">
-            <a href="index.html">
+        <div class="d-flex justify-content-between header-inner">
+          <div
+            class="header-border-bottom d-flex align-items-center justify-content-between flex-grow-1"
+          >
+            <a href="/">
               <img src="assets/images/logo/logo.png" alt="logo" />
             </a>
 
             <!-- Link Start -->
             <a
               href="contact.html"
-              class="d-flex align-items-center flex-wrap py-6px px-3 text-15 fw-bold text-active leading-none mr-2 transition-all contact-link-warning"
+              class="d-flex align-items-center flex-wrap fw-bold text-dark lh-1 contact-link hover-text-white"
               >Let’s Talk
-              <span class="d-inline-block ml-3 animate-arrow-up">
+              <span class="animate-arrow-up">
                 <svg
                   width="24"
                   height="24"
@@ -90,26 +92,24 @@
           </div>
 
           <!-- Button Start -->
-          <div class="flex-none">
-            <button
-              id="offcanvas-toggle"
-              class="border-0 bg-dark d-flex align-align-items-center flex-wrap justify-content-center py-7 px-38"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvas"
-              aria-controls="offcanvas"
+          <button
+            id="offcanvas-toggle"
+            class="bg-dark border-0 offcanvas-toggle"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvas"
+            aria-controls="offcanvas"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect x="3" y="8" width="18" height="2" fill="white" />
-                <rect x="3" y="14" width="18" height="2" fill="white" />
-              </svg>
-            </button>
-          </div>
+              <rect x="3" y="8" width="18" height="2" fill="white" />
+              <rect x="3" y="14" width="18" height="2" fill="white" />
+            </svg>
+          </button>
           <!-- Button End -->
         </div>
       </header>
@@ -125,7 +125,7 @@
           <div
             class="d-flex flex-wrap justify-content-between align-items-center offcanvas-header"
           >
-            <a href="index.html">
+            <a href="/">
               <img src="assets/images/logo/offcanvas-logo.png" alt="" />
             </a>
             <button
@@ -167,234 +167,31 @@
             <ul class="offcanvas-menu p-0 list-unstyled">
               <li class="offcanvas-menu-item">
                 <a
-                  href="index.html"
+                  href="/"
                   class="text-white text-xl fw-bold font-Syne leading-none d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link"
                   >Home
-                  <span class="d-inline-block animate-arrow-up">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7 17L17 7"
-                        stroke="currentColor"
-                        stroke-opacity="0.9"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        d="M7 7H17V17"
-                        stroke="currentColor"
-                        stroke-opacity="0.9"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </span>
                 </a>
               </li>
               <li class="offcanvas-menu-item">
                 <a
-                  href="about.html"
+                  href="/about"
                   class="text-white text-xl fw-bold font-Syne leading-none d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link"
                   >About
-                  <span class="d-inline-block animate-arrow-up">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7 17L17 7"
-                        stroke="currentColor"
-                        stroke-opacity="0.9"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        d="M7 7H17V17"
-                        stroke="currentColor"
-                        stroke-opacity="0.9"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </span>
-                </a>
-              </li>
-              <li class="offcanvas-menu-item">
-                <a
-                  href="projects.html"
-                  class="text-white text-xl fw-bold font-Syne leading-none d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link"
-                  >Project
-                  <span class="d-inline-block animate-arrow-up">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7 17L17 7"
-                        stroke="currentColor"
-                        stroke-opacity="0.9"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        d="M7 7H17V17"
-                        stroke="currentColor"
-                        stroke-opacity="0.9"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </span>
-                </a>
-              </li>
-              <li class="offcanvas-menu-item">
-                <a
-                  href="project-details.html"
-                  class="text-white text-xl fw-bold font-Syne leading-none d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link"
-                  >Project details
-                  <span class="d-inline-block animate-arrow-up">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7 17L17 7"
-                        stroke="currentColor"
-                        stroke-opacity="0.9"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        d="M7 7H17V17"
-                        stroke="currentColor"
-                        stroke-opacity="0.9"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </span>
-                </a>
-              </li>
-              <li class="offcanvas-menu-item">
-                <a
-                  href="blog.html"
-                  class="text-white text-xl fw-bold font-Syne leading-none d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link"
-                  >Blog
-                  <span class="d-inline-block animate-arrow-up">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7 17L17 7"
-                        stroke="currentColor"
-                        stroke-opacity="0.9"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        d="M7 7H17V17"
-                        stroke="currentColor"
-                        stroke-opacity="0.9"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </span>
-                </a>
-              </li>
-              <li class="offcanvas-menu-item">
-                <a
-                  href="blog-details.html"
-                  class="text-white text-xl fw-bold font-Syne leading-none d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link"
-                  >Blog Details
-                  <span class="d-inline-block animate-arrow-up">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7 17L17 7"
-                        stroke="currentColor"
-                        stroke-opacity="0.9"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        d="M7 7H17V17"
-                        stroke="currentColor"
-                        stroke-opacity="0.9"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </span>
                 </a>
               </li>
 
               <li class="offcanvas-menu-item">
                 <a
-                  href="contact.html"
+                  href="/blog"
+                  class="text-white text-xl fw-bold font-Syne leading-none d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link"
+                  >Blog
+                </a>
+              </li>
+              <li class="offcanvas-menu-item">
+                <a
+                  href="/contact"
                   class="text-white text-xl fw-bold font-Syne leading-none d-flex flex-wrap align-items-center justify-content-between offcanvas-menu-link"
                   >Contact
-                  <span class="d-inline-block animate-arrow-up">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7 17L17 7"
-                        stroke="currentColor"
-                        stroke-opacity="0.9"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                      <path
-                        d="M7 7H17V17"
-                        stroke="currentColor"
-                        stroke-opacity="0.9"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </span>
                 </a>
               </li>
             </ul>
