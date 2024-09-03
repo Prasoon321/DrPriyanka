@@ -37,6 +37,9 @@ app.get('/contact', (req, res) => {
 app.get('/blog', (req, res) => {
     res.render('blog.ejs');
 });
+app.get('/contat', (req, res) => {
+    res.render('contact.ejs');
+});
 app.get('/building-self-esteem-foundation-mental-well-being', (req, res) => {
     res.render('building-self-esteem-foundation-mental-well-being.ejs');
 });
