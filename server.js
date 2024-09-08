@@ -8,7 +8,7 @@ const port = 4000;
 const axios = require("axios")
 const cors = require("cors")
 
-// const form = require('./routes/formData')
+const form = require('./route/contactroute')
 app.use(cors());
 // static file 
 
@@ -20,6 +20,7 @@ app.set('views', path.join(__dirname, 'views'));
 // Middleware to parse JSON and URL-encoded data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use('/form', form)
 
 // Route to render your EJS file
 app.get('/', (req, res) => {
@@ -43,7 +44,6 @@ app.get('/contat', (req, res) => {
 app.get('/building-self-esteem-foundation-mental-well-being', (req, res) => {
     res.render('building-self-esteem-foundation-mental-well-being.ejs');
 });
-// app.use('/form', form)
 
 
 // ftechvisadata()

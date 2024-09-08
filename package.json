@@ -1,10 +1,9 @@
 {
-  "name": "oneclickevisa",
+  "name": "drpriyanka",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-   
     "dev": "npx nodemon server.js",
     "start": "node server.js"
   },
@@ -17,7 +16,7 @@
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "nodemailer": "^6.9.14"
+    "nodemailer": "^6.9.15"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
