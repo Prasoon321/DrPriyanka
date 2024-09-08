@@ -79,7 +79,7 @@ const sendemail = async (req, res) => {
     `;
     let mailOptions = {
         from: process.env.Gmail_User,
-        to: "jbprasoon@gmail.com",
+        to: "drpriyaanka1@gmail.com",
         // drpriyaanka1@gmail.com
         // ishitasingh96500@gmail.com
         subject: "Consultation  ",
