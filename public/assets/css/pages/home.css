@@ -1250,13 +1250,13 @@ only screen and (min-width: 1441px) {
 only screen and (min-width: 1280px) and (max-width: 1440px),
 only screen and (min-width: 1441px) {
   .hello-iam {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
 .hello-iam span {
   display: inline-block;
-  margin-right: 24px;
+  margin-right: 5px;
 }
 
 .hello-iam img {
@@ -2644,4 +2644,8 @@ textarea.contact-form-control {
   right: 50px;
   z-index: 1234;
   position: fixed;
+}
+
+.pt-50 {
+  padding-top: 70px;
 }
