@@ -1265,7 +1265,7 @@ only screen and (min-width: 1441px) {
 
 .hero-title {
   color: #080808;
-  font-size: 80px;
+  font-size: 65px;
   line-height: 64px;
 }
 
@@ -2648,4 +2648,10 @@ textarea.contact-form-control {
 
 .pt-50 {
   padding-top: 70px;
+}
+
+@media only screen and (max-width: 972px) {
+  .pt-50 {
+    padding-top: 100px;
+  }
 }
