@@ -329,6 +329,10 @@ only screen and (min-width: 1441px) {
   font-size: 24px;
 }
 
+.text-2xlll {
+  font-size: 16px;
+}
+
 .text-32 {
   font-size: 32px;
 }
@@ -1250,7 +1254,11 @@ only screen and (min-width: 1441px) {
 only screen and (min-width: 1280px) and (max-width: 1440px),
 only screen and (min-width: 1441px) {
   .hello-iam {
-    font-size: 28px;
+    font-size: 20px;
+  }
+
+  .hello-iamam {
+    font-size: 27px;
   }
 }
 
@@ -1303,7 +1311,7 @@ only screen and (min-width: 1441px) {
 @media only screen and (min-width: 1280px) and (max-width: 1440px),
 only screen and (min-width: 1441px) {
   .iam-designer {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
