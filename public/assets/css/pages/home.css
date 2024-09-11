@@ -345,7 +345,7 @@ only screen and (min-width: 1441px) {
 .circle-shape::before,
 .section-title.circle-shape::before {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   z-index: -1;
   content: "";
