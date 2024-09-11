@@ -263,7 +263,7 @@ a {
     }
 
     .imported-nav {
-        height: calc(var(--header-height) + 2rem);
+        height: calc(var(--header-height) + 1rem);
         display: flex;
         justify-content: space-between;
     }
