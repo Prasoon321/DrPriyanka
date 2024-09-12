@@ -7,11 +7,6 @@ $(document).ready(function () {
         const contact = $('#Phone').val()
         const purpose = $('#Message').val()
 
-
-        console.log(name)
-        console.log(email)
-        console.log(contact)
-        console.log(purpose)
         if (!name) {
             alert("Please fill the name first")
             return
@@ -34,7 +29,7 @@ $(document).ready(function () {
         console.log(dataobj)
         $("#submitbutton").text("Request Processing....")
         $.ajax({
-            url: 'http://localhost:4000/form/send',
+            url: 'https://dr-priyanka.vercel.app/form/send',
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(dataobj),

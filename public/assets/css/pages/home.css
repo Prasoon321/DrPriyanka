@@ -1286,14 +1286,14 @@ only screen and (min-width: 1441px) {
 
 @media only screen and (min-width: 1280px) and (max-width: 1440px) {
   .hero-title {
-    font-size: 120px;
+    font-size: 90px;
     line-height: 90px;
   }
 }
 
 @media only screen and (min-width: 1441px) {
   .hero-title {
-    font-size: 140px;
+    font-size: 100px;
     line-height: 110px;
   }
 }
@@ -2658,8 +2658,8 @@ textarea.contact-form-control {
   padding-top: 70px;
 }
 
-@media only screen and (max-width: 972px) {
+/* @media only screen and (max-width: 972px) {
   .pt-50 {
     padding-top: 100px;
   }
-}
+} */
