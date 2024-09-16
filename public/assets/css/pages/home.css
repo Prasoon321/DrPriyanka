@@ -2663,3 +2663,54 @@ textarea.contact-form-control {
     padding-top: 100px;
   }
 } */
+
+.headerblackstrip {
+  height: 5vh;
+  width: 100vw;
+  background-color: black;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 30;
+}
+
+.scroll {
+  white-space: nowrap;
+}
+
+.scroll div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.scroll p {
+  color: white;
+  padding-bottom: 5px;
+  padding-top: 4px;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.righthtoleft {
+  animation: righttoleft 30s infinite linear;
+}
+
+.scroll:hover .righthtoleft {
+  animation-play-state: paused;
+}
+
+@keyframes righttoleft {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slidercontainer {
+  height: 550px;
+  min-height: 400px;
+}

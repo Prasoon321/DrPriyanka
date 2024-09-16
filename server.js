@@ -26,6 +26,9 @@ app.use('/form', form)
 app.get('/', (req, res) => {
     res.render('index.ejs');
 });
+app.get('/index1', (req, res) => {
+    res.render('index1.ejs');
+});
 app.get('/about', (req, res) => {
     res.render('about.ejs');
 });
