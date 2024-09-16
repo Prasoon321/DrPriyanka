@@ -1698,7 +1698,7 @@ section,
 }
 
 .righthtoleft {
-    animation: righttoleft 30s infinite linear;
+    animation: righttoleft 20s infinite linear;
 }
 
 .scroll:hover .righthtoleft {
