@@ -44,6 +44,7 @@ $(document).ready(function () {
             },
             error: function (error) {
                 $("#mssgbtn").text("Please Try Again")
+                console.log(error)
             }
         })
 

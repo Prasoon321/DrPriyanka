@@ -90,7 +90,7 @@ const sendemail = async (req, res) => {
         return res.status(200).send({ message: 'Email sent successfully' });
     } catch (error) {
         console.error('Error sending email:', error);
-        return res.status(500).json({ error: 'Failed to send email' });
+        return res.status(500).json({ error: error.message });
     }
 }
 const sendemailtestimony = async (req, res) => {
