@@ -12,6 +12,18 @@ const sendemail = async (req, res) => {
             pass: process.env.Gmail_Pass,
         },
     });
+    await new Promise((resolve, reject) => {
+        // verify connection configuration
+        transporter.verify(function (error, success) {
+            if (error) {
+                console.log(error);
+                reject(error);
+            } else {
+                console.log("Server is ready to take our messages");
+                resolve(success);
+            }
+        });
+    });
     const emailContent = `<!DOCTYPE html>
     <html lang="en">
     <head>
