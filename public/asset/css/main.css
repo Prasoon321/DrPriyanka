@@ -1900,3 +1900,25 @@ section,
     }
 
 }
+
+.background-section {
+    background-image: url('../images/aboutbg.png');
+    background-size: cover;
+    /* Adjust as per your need: cover, contain, etc. */
+    background-position: center;
+    /* Align image center */
+    background-repeat: no-repeat;
+    /* Full-screen section (adjust as needed) */
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    /* Make sure content appears above the background */
+    color: white;
+    /* Or adjust as needed */
+    padding: 20px;
+    /* Spacing */
+}

@@ -26,7 +26,7 @@ $(document).ready(function () {
         reloadslider();
     }
 
-    let autoslide = setInterval(() => { next.click(); }, 3000);
+    let autoslide = setInterval(() => { next.click(); }, 5000);
 
     function reloadslider() {
         let checkleft = items[active].offsetLeft;
