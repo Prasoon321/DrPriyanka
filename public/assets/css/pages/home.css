@@ -2692,9 +2692,7 @@ textarea.contact-form-control {
   font-size: 13px;
 }
 
-.righthtoleft {
-  animation: righttoleft 30s infinite linear;
-}
+
 
 .scroll:hover .righthtoleft {
   animation-play-state: paused;
