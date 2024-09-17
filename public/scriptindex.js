@@ -59,22 +59,22 @@ $(document).ready(function () {
 
         }
         console.log(dataobj)
-        $("#submitbuttontest").text("Request Processing....")
+        $("#handleformtest").text("Request Processing....")
         $.ajax({
             url: 'https://dr-priyanka.vercel.app/form/send/testimony',
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(dataobj),
             success: function (response) {
-                $("#handleform").text("Request Submited")
+                $("#handleformtest").text("Request Submited")
                 $('#name').val(' ')
 
                 $('#Message').val(' ')
-                $("#submitbuttontest").text("")
+
 
             },
             error: function (error) {
-                $("#handleform").text("Please Try Again")
+                $("#handleformtest").text("Please Try Again")
             }
         })
     })

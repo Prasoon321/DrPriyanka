@@ -2,13 +2,13 @@ $(document).ready(function () {
     console.log("hello")
     $("#handleform").submit(function (e) {
         e.preventDefault()
-        const name = $('#name').val()
+        const name = $('#namecontact').val()
         const email = $('#Email').val()
         const contact = $('#Phone').val()
-        const purpose = $('#Message').val()
+        const purpose = $('#Messagecontact').val()
 
         if (!name) {
-            alert("Please fill the name first")
+            alert("Please fill the namedfe first")
             return
         }
         if (!contact) {
