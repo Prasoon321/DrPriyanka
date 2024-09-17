@@ -31,87 +31,11 @@
          rel="stylesheet"
          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
          />
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <!-- Main CSS File -->
       <link href="asset/css/main.css" rel="stylesheet" />
-      <style>
-         .slider{
-    width: 1300px;
-    max-width: 100vw;
-    height: 520px;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-}
-.list {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    display: flex;
-    width: max-content;
-    transition: 1s;
-}
-.list img{
-    width: 1300px;
-    max-width: 100vw;
-    height: 100%;
-    object-fit: cover;
-}
-.buttons{
-    position: absolute;
-    top: 45%;
-    left: 5%;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-}
-.buttons button {
-    width: 50px;
-    height: 50px;
-    border-radius: 505;
-    background-color: #fff5;
-    color: #fff;
-    border: none;
-    font-family: monospace;
-    font-weight: bold;
-}
-.dots{
-    position: absolute;
-    bottom: 10px;
-    color: #fff;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    transition: 1s;
-}
-.dots li {
-    list-style: none;
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 20px;
-}
-.dots li.active {
-    width: 30px;
-}
-@media screen and ( max-width: 768px) { 
-    .slider {
-        height: 400px;
-    }
-    
-}
-@media screen and ( max-width: 568px) { 
-    .slider {
-        height: 300px;
-    }
-    
-}
-      </style>
+
    </head>
    <body class="index-page">
       <div class="row">
@@ -148,6 +72,7 @@
                   <li><a href="#about">About</a></li>
                   <li><a href="#goals">Goals</a></li>
                   <li><a href="#service">Services</a></li>
+                  <li><a href="#">Blogs</a></li>
                   <li><a href="#feedback">Feedback</a></li>
              
                   <li><a href="#contact">Contact</a></li>
@@ -175,6 +100,7 @@
                <div class="list">
                    <div class="item">
                        <img src="asset/images/slider2.png" alt="image1">
+                    
                    </div>
                    <div class="item">
                        <img src="asset/images/slider4.png" alt="image2">
@@ -182,20 +108,19 @@
                    <div class="item">
                        <img src="asset/images/slider3.png" alt="image3">
                    </div>
-                   <div class="item">
+                   <!-- <div class="item">
                        <img src="asset/images/slider1.png" alt="image4">
-                   </div>
+                   </div> -->
                    
                </div>
                <!--button prev and next-->
                <div class="buttons">
-                   <button id="prev"><</button>
-               <button id="next">></button>
+                   <button id="prev"></button>
+               <button id="next"></button>
                </div>
                <!--Dots (if 5 items => 5 dots)-->
                <ul class="dots">
                   <li class="active"></li>
-                  <li></li>
                   <li></li>
                   <li></li>
                </ul>
@@ -205,7 +130,7 @@
          <!-- About Section -->
          <section id="about" class="about section">
             <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
+            <div class="container section-title"  data-aos="fade-up">
                <p>
                   <span style="font-size: 50px; font-weight: 600">Hello I'am</span>
                </p>
@@ -217,7 +142,16 @@
                      >Priyanka</span
                      >
                </p>
+               <p>
+
+                  <span
+                     class="description-title fst-italic"
+                     style="font-size: 30px; font-weight: 800"
+                     >And if you are here, let me tell you that whatever it is that you're going through, I hear you and understand and assure to hand hold you through your journey of healing and transformation.</span
+                     >
+               </p>
             </div>
+           
             <!-- End Section Title -->
             <div class="container">
                <div class="row gy-4">
@@ -656,6 +590,7 @@
                      <input
                         type="text"
                         name="name"
+                        id="name"
                         class="form-control"
                         placeholder="Your Name"
                         required=""
@@ -665,19 +600,20 @@
                   <div class="col-md-12">
                      <textarea
                         class="form-control"
-                        name="message"
+                        name="Message"
                         rows="6"
                         placeholder="Message"
+                        id="Message"
                         required=""
                         ></textarea>
                   </div>
                   <div class="col-md-12 text-center">
-                     <div class="loading">Loading</div>
+                     <div class="loading" id="submitbuttontest">Loading</div>
                      <div class="error-message"></div>
                      <div class="sent-message">
                         Your message has been sent. Thank you!
                      </div>
-                     <button type="submit">Send Feedback</button>
+                     <button type="submit" id="handleformtest">Send Feedback</button>
                   </div>
                </div>
             </form>
@@ -740,7 +676,7 @@
                 
                   <!-- End Info Item -->
                </div>
-               <form
+               <form id="handleform"
                   
                   class="php-email-form"
                   data-aos="fade-up"
@@ -754,42 +690,41 @@
                            class="form-control"
                            placeholder="Your Name"
                            required=""
+                           id="name"
                            />
                      </div>
                      <div class="col-md-6">
                         <input
                            type="email"
                            class="form-control"
-                           name="email"
+                           name="Email"
                            placeholder="Your Email"
                            required=""
+                           id="Email"
                            />
                      </div>
                      <div class="col-md-12">
                         <input
-                           type="text"
+                           type="number"
                            class="form-control"
                            name="subject"
-                           placeholder="Subject"
+                           placeholder="Contact"
                            required=""
+                           id="Phone"
                            />
                      </div>
                      <div class="col-md-12">
                         <textarea
                            class="form-control"
-                           name="message"
+                           name="Message"
                            rows="6"
                            placeholder="Message"
-                           required=""
+                           id="Message"
                            ></textarea>
                      </div>
                      <div class="col-md-12 text-center">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">
-                           Your message has been sent. Thank you!
-                        </div>
-                        <button type="submit">Send Message</button>
+                        
+                        <button type="submit" id="mssgbtn">Send Message</button>
                      </div>
                   </div>
                </form>
@@ -857,52 +792,8 @@
          ></a>
       <!-- Preloader -->
       <div id="preloader"></div>
- <script>
-   let list = document.querySelector('.slider .list');
-let items = document.querySelectorAll('.slider .list .item');
-let dots = document.querySelectorAll('.slider .dots li');
-let prev = document.getElementById('prev');
-let next = document.getElementById('next');
+      
 
-let active = 0;
-let lengthitems = items.length - 1;
-
-next.onclick = function() {
-    if (active + 1 > lengthitems) {
-        active = 0;
-    } else {
-        active = active + 1;
-    }
-    reloadslider();
-}
-
-prev.onclick = function() {
-    if (active - 1 < 0) {
-        active = lengthitems;
-    } else {
-        active = active - 1;
-    }
-    reloadslider();
-}
-
-let autoslide = setInterval(() => { next.click(); }, 3000);
-
-function reloadslider() {
-    let checkleft = items[active].offsetLeft;
-    list.style.left = -checkleft + 'px';
-
-    let lastactiveDot = document.querySelector('.slider .dots li.active');
-    if (lastactiveDot) lastactiveDot.classList.remove('active');
-    dots[active].classList.add('active');
-}
-
-dots.forEach((li, key) => {
-    li.addEventListener('click', function() {
-        active = key;
-        reloadslider();
-    })
-})
- </script>
       <!-- Vendor JS Files -->
       <script
          data-cfasync="false"
@@ -916,6 +807,9 @@ dots.forEach((li, key) => {
       <!-- <script src="asset/js/swiper-bundle.min.js"></script> -->
       <!-- Main JS File -->
       <script src="asset/js/main.js"></script>
+      <script src="scriptindex.js"></script>
+      <script src="scriptcontact.js"></script>
+      
    </body>
 </html>
 

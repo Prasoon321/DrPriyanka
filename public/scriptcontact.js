@@ -27,23 +27,27 @@ $(document).ready(function () {
 
         }
         console.log(dataobj)
-        $("#submitbutton").text("Request Processing....")
+        $("#mssgbtn").text("Request Processing...")
+
         $.ajax({
             url: 'https://dr-priyanka.vercel.app/form/send',
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(dataobj),
             success: function (response) {
-                $("#submitbutton").text("Request Submited")
+                $("#mssgbtn").text(" Your message has been sent. Thank you!")
                 $('#name').val(' ')
                 $('#Email').val('')
                 $('#Phone').val(' ')
                 $('#Message').val(' ')
+
             },
             error: function (error) {
-                $("#submitbutton").text("Please Try Again")
+                $("#mssgbtn").text("Please Try Again")
             }
         })
+
+
     })
 
 })
