@@ -42,9 +42,10 @@ app.get('/blog', (req, res) => {
 app.get('/contat', (req, res) => {
     res.render('contact.ejs');
 });
-app.get('/building-self-esteem-foundation-mental-well-being', (req, res) => {
-    res.render('building-self-esteem-foundation-mental-well-being.ejs');
+app.get('/understanding-self-worth-and-self-esteem', (req, res) => {
+    res.render('understanding-self-worth-and-self-esteem.ejs');
 });
+
 
 
 // ftechvisadata()
