@@ -61,7 +61,7 @@ $(document).ready(function () {
         console.log(dataobj)
         $("#handleformtest").text("Request Processing....")
         $.ajax({
-            url: 'https://dr-priyanka.vercel.app/form/send/testimony',
+            url: 'https://www.drpriyankamishra.com/form/send/testimony',
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(dataobj),

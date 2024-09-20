@@ -30,7 +30,7 @@ $(document).ready(function () {
         $("#mssgbtn").text("Request Processing...")
 
         $.ajax({
-            url: 'https://dr-priyanka.vercel.app/form/send',
+            url: 'https://www.drpriyankamishra.com/form/send',
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(dataobj),
